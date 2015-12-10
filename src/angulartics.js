@@ -295,7 +295,7 @@ angular.module('angulartics', [])
         if($attrs.analyticsProperties){
           angular.extend(trackingData, $scope.$eval($attrs.analyticsProperties));
         }
-        $analytics.eventTrack(eventName, trackingData);
+        $analytics.eventTrack(eventName, trackingData, $scope);
       });
     }
   };
